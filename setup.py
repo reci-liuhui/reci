@@ -11,27 +11,7 @@ execfile(join(dirname(__file__), 'openerp', 'release.py'))  # Load release varia
 lib_name = 'openerp'
 
 
-def py2exe_datafiles():
-    data_files = {}
-    data_files['Microsoft.VC90.CRT'] = glob('C:\Microsoft.VC90.CRT\*.*')
-
-    for root, dirnames, filenames in os.walk('openerp'):
-        for filename in filenames:
-            if not re.match(r'.*(\.pyc|\.pyo|\~)$', filename):
-                data_files.setdefault(root, []).append(join(root, filename))
-
-    import babel
-    data_files['babel/localedata'] = glob(join(dirname(babel.__file__), 'localedata', '*'))
-    others = ['global.dat', 'numbers.py', 'support.py', 'plural.py']
-    data_files['babel'] = map(lambda f: join(dirname(babel.__file__), f), others)
-    others = ['frontend.py', 'mofile.py']
-    data_files['babel/messages'] = map(lambda f: join(dirname(babel.__file__), 'messages', f), others)
-
-    import pytz
-    tzdir = dirname(pytz.__file__)
-    for root, _, filenames in os.walk(join(tzdir, 'zoneinfo')):
-        base = join('pytz', root[len(tzdir) + 1:])
-        data_files[base] = [join(root, f) for f in filenames]
+aaaa
 
     import docutils
     dudir = dirname(docutils.__file__)

@@ -6,12 +6,12 @@ from glob import glob
 from setuptools import find_packages, setup
 from os.path import join, dirname
 
-
+#添加注释
 execfile(join(dirname(__file__), 'openerp', 'release.py'))  # Load release variables
 lib_name = 'openerp'
 
 
-aaaa
+
 
     import docutils
     dudir = dirname(docutils.__file__)

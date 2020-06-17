@@ -9,7 +9,7 @@ from os.path import join, dirname
 #添加注释
 execfile(join(dirname(__file__), 'openerp', 'release.py'))  # Load release variables
 lib_name = 'openerp'
-
+#添加新的注释
 
 
 

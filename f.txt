@@ -2,3 +2,4 @@ this is a text
 yes
 
 no
+add a new line

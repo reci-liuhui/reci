@@ -10,6 +10,7 @@ from os.path import join, dirname
 execfile(join(dirname(__file__), 'openerp', 'release.py'))  # Load release variables
 lib_name = 'openerp'
 #添加新的注释
+# 添加最新的注释
 
 
 
